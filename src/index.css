@@ -1,0 +1,112 @@
+.mainform{ 
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+.mainform input{
+    width: 350px;
+    height: 40px;
+    margin-top: 5px;
+    border: 0.5px solid black;
+    color: black;
+}
+.mainform input:hover{
+    border:3px solid blueviolet;
+}
+.mainform button{
+    width:70px;
+    height: 40px;
+    background-color: red;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    margin-top: 5px;
+    margin-left: 120px;
+}
+.mainform button:hover{
+    background-color: antiquewhite;
+    color: red;
+    border: 1px solid red;
+}
+.allcontainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: antiquewhite;
+    height:400px ;
+    border-radius: 10px;
+}
+.imagee{
+    margin-top: 15px;
+    height: 360px;
+    width: 600px;
+    border-radius: 10px;
+}
+h1{
+    margin-left: 500px;
+}
+.navitem{
+    display: flex;
+    flex-direction: row;
+    margin-left: -500px;
+    justify-content: space-between;
+}
+.navitem h3{
+    font-size: large;
+    font-weight: 900;
+    margin-top: 25px;
+}
+.navitem h3:hover{
+    color: gray;
+    border-bottom:4px solid red;
+    cursor: pointer;
+}
+.navitem button{
+    color: white;
+    background-color: red;
+    border: none;
+    height: 50px;
+    width: 140px;
+    margin-top: 5px;
+}
+.navitem button:hover{
+    background-color: rgb(163, 231, 231);
+    color: black;
+    height: 40px;
+    width: 120px;
+}
+.containerall{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: beige;
+}
+.textall{
+    display: flex;
+    flex-direction: column;
+}
+.textall h1{
+    margin-left: 0px;
+    color: rgb(63, 62, 62);
+    font-size: 60px;
+    font-weight: 1000;
+    margin-top: -30px;
+}
+.textall p{
+    color: gray;
+    font-weight: 900;
+    margin-top: 150px;
+}
+.textall button{
+    height: 70px;
+    width: 120px;
+    color: red;
+    background-color: antiquewhite;
+    border: none;
+}
+img{
+    height: 500px;
+    width: 500px;
+    border-radius: 10px;
+}
