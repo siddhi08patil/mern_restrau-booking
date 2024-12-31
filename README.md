@@ -1,70 +1,110 @@
-# Getting Started with Create React App
+Restaurant Booking Web App (MERN Stack)
+A full-stack restaurant booking web application built using the MERN (MongoDB, Express.js, React, Node.js) stack. This app allows users to make, view, and manage reservations at a restaurant.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Features
+User Registration & Authentication: Secure user authentication with JWT tokens.
+Restaurant Reservations: Users can make, view, and cancel reservations.
+Date & Time Picker: Choose a date and time for booking the reservation.
+Admin Dashboard: Admins can view all bookings, cancel reservations, and manage the restaurant's availability.
+Mobile-Friendly: Responsive design that works across different devices.
+Email Notifications: Receive email notifications for booking confirmations and cancellations.
+Technologies Used
+Frontend: React.js, React Router, Axios
+Backend: Node.js, Express.js
+Database: MongoDB, Mongoose
+Authentication: JSON Web Tokens (JWT)
+Styling: CSS, Bootstrap (optional)
+Email Service: Nodemailer (for sending booking confirmation emails)
+Installation
+Prerequisites
+Node.js (v14.x or higher)
+MongoDB (can be hosted locally or using a service like MongoDB Atlas)
+Steps
+Clone the Repository:
 
-## Available Scripts
+bash
+Copy code
+git clone https://github.com/siddhi08patil/mern_restrau-booking.git
+cd restaurant-booking-app
+Install Dependencies for the Backend:
 
-In the project directory, you can run:
+Navigate to the backend directory and install the necessary dependencies:
 
-### `npm start`
+bash
+Copy code
+cd backend
+npm install
+Install Dependencies for the Frontend:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Navigate to the frontend directory and install the necessary dependencies:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+bash
+Copy code
+cd ../frontend
+npm install
+Set Up Environment Variables:
 
-### `npm test`
+In the backend folder, create a .env file and add your environment variables, such as:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+bash
+Copy code
+MONGO_URI=<Your MongoDB URI>
+JWT_SECRET=<Your JWT Secret Key>
+EMAIL_HOST=<Your SMTP Email Host>
+EMAIL_PORT=<Your SMTP Email Port>
+EMAIL_USER=<Your SMTP Email User>
+EMAIL_PASS=<Your SMTP Email Password>
+Run the Application:
 
-### `npm run build`
+Start the backend server:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+bash
+Copy code
+cd backend
+npm run dev
+Start the frontend server:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+bash
+Copy code
+cd ../frontend
+npm start
+Both servers should now be running. The frontend should be available at http://localhost:3000 and the backend at http://localhost:5000.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Usage
+User Features:
 
-### `npm run eject`
+Register/Login to create and manage reservations.
+Select the date and time for the booking.
+View, edit, or cancel upcoming bookings.
+Admin Features:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+View a list of all bookings.
+Cancel reservations and manage the availability.
+File Structure
+bash
+Copy code
+/restaurant-booking-app
+├── /backend
+│   ├── /controllers
+│   ├── /models
+│   ├── /routes
+│   ├── server.js
+│   └── .env
+├── /frontend
+│   ├── /src
+│   │   ├── /components
+│   │   ├── /context
+│   │   └── App.js
+│   └── package.json
+└── README.md
+Contributing
+Contributions are welcome! If you want to help improve the project, feel free to fork the repository and submit pull requests.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Steps to Contribute
+Fork the repository.
+Create a new branch (git checkout -b feature-branch).
+Make your changes and commit them (git commit -am 'Add new feature').
+Push to your forked repository (git push origin feature-branch).
+Open a pull request.
+License
+This project is licensed under the MIT License - see the LICENSE file for details.
